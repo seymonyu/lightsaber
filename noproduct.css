@@ -114,7 +114,7 @@ a {
 
   /* Defines the skew origin at the very center when we apply transforms on the animation */
   transform-origin: 50% 100%;
-  animation: crawl 20s linear infinite;
+  animation: crawl 30s linear infinite;
   animation-play-state: running;
 }
 @keyframes crawl {
