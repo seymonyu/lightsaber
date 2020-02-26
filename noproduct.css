@@ -1,0 +1,133 @@
+body {
+  font-family: "Rubik Mono One";
+  background-image: url("https://ak6.picdn.net/shutterstock/videos/13390736/thumb/5.jpg");
+  /* Force the body to fill the entire screen */
+  width: 100%;
+  height: 100%;
+  /* Hide elements that flow outside the viewable space */
+  overflow: hidden;
+  /* Black background for the screen */
+}
+.title {
+  margin-top: 50px;
+  font-family: "Rubik Mono One";
+  text-align: center;
+  font-size: 50px;
+  color: #f9d71c;
+  text-shadow: 3px 3px 5px grey;
+}
+
+.linka {
+  text-decoration: none;
+}
+p {
+  margin-top: 50px;
+  font-family: "Rubik Mono One";
+  text-align: center;
+  font-size: 30px;
+  color: #f9d71c;
+  text-shadow: 3px 3px 5px grey;
+}
+.col-sm {
+  width: 300px;
+  margin: 60px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 50px;
+  border-radius: 50px;
+}
+.good {
+  margin-top: 50px;
+  font-family: "Rubik Mono One";
+  text-align: center;
+  font-size: 30px;
+  color: #f9d71c;
+  text-shadow: 3px 3px 5px grey;
+}
+.goodp {
+  margin-top: 50px;
+  margin-right: 100px;
+  margin-left: 100px;
+  font-family: "Kanit";
+  text-align: center;
+  font-size: 40 px;
+  color: #f9d71c;
+  text-shadow: 3px 3px 5px grey;
+}
+.row {
+  display: inline-block;
+  margin-left: 250px;
+}
+.skyw {
+  width: 400px;
+  height: 250px;
+  margin-left: 200px;
+}
+.vadr {
+  width: 400px;
+  height: 250px;
+}
+a {
+  text-align: center;
+  font-family: "Rubik Mono One";
+  color: #f9d71c;
+}
+.link-a {
+  color: #f9d71c;
+}
+
+.sidious {
+  margin-left: 460px;
+  margin-top: 50px;
+}
+.darkest {
+  width: 500px;
+  border-radius: 30px;
+  box-shadow: 3px 3px 5px grey;
+}
+.yoda {
+  width: 400px;
+  border-radius: 30px;
+  box-shadow: 3px 3px 5px grey;
+}
+.star-wars {
+  /* Flexbox to center the entire element on the screen */
+  display: flex;
+  justify-content: center;
+  /* This is a magic number based on the context in which this snippet is used and effects the perspective */
+  height: 250px;
+  /* This sets allows us to transform the text on a 3D plane, and is somewhat a magic number */
+  perspective: 400px;
+  /* The rest is totally up to personal styling preferences */
+  color: #feda4a;
+  font-family: "Pathway Gothic One", sans-serif;
+  font-size: 500%;
+  font-weight: 600;
+  letter-spacing: 6px;
+  line-height: 150%;
+  text-align: justify;
+}
+.crawl {
+  /* Position the element so we can adjust the top property in the animation */
+  position: relative;
+  /* Making sure the text is fully off the screen at the start and end of the animation */
+
+  /* Defines the skew origin at the very center when we apply transforms on the animation */
+  transform-origin: 50% 100%;
+  animation: crawl 20s linear infinite;
+  animation-play-state: running;
+}
+@keyframes crawl {
+  0% {
+    /* The element starts below the screen */
+    top: 0;
+    /* Rotate the text 20 degrees but keep it close to the viewer */
+    transform: rotateX(20deg) translateZ(0);
+  }
+  100% {
+    /* This is a magic number, but using a big one to make sure the text is fully off the screen at the end */
+    top: -3500px;
+    /* Slightly increasing the rotation at the end and moving the text far away from the viewer */
+    transform: rotateX(25deg) translateZ(-2500px);
+  }
+}
